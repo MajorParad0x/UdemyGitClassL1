@@ -4,6 +4,15 @@ import MobileMenu from './modules/MobileMenu';
 import RevealOnScroll from './modules/RevealOnScroll';
 import StickyHeader from './modules/StickyHeader';
 
+// Start of React code
+import React from 'react';
+import ReactDom from 'react-dom';
+ReactDom.render(<MyAmazingComponent />, document.querySelector("#my-react-example"))
+
+import MyAmazingComponent from './modules/MyAmazingComponent';
+
+// End of React code
+
 new StickyHeader();
 new RevealOnScroll(document.querySelectorAll(".feature-item"), 75);
 new RevealOnScroll(document.querySelectorAll(".testimonial"), 60);
